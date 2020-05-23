@@ -1,0 +1,63 @@
+.findgift {
+  background-image: url(/img/img1people.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  img {
+    display: none;
+  }
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+
+    align-items: center;
+    background-color: $bg_shadow;
+    background-clip: border-box;
+    z-index: 1;
+  }
+}
+
+.findgiftnow {
+  width: auto;
+  max-width: 433px;
+  height: 411px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+
+@media screen and (min-width: 768px) {
+  .findgiftnow {
+    width: 720px;
+    max-width: none;
+    height: auto;
+    padding: 0 144px;
+    margin: 154px auto 135px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .findgift {
+    background-image: none;
+
+    img {
+      display: block;
+    }
+    .wrapper {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  .findgiftnow {
+    margin: 0;
+    padding: 0 126px 0 162px;
+    text-align: start;
+    align-items: flex-start;
+  }
+}

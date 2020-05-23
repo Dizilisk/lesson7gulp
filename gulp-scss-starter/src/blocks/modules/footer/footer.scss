@@ -1,0 +1,91 @@
+footer {
+  padding: 20px 10px;
+  display: block;
+  text-align: center;
+  background: $bg_color;
+  .logo {
+    margin: 0;
+    color: $button;
+  }
+}
+
+.footerMenu {
+  display: none;
+  a {
+    font-size: 14px;
+    line-height: 140.62%;
+    /* identical to box height, or 20px */
+
+    color: #000000;
+  }
+  span {
+    font-family: "Homemade Apple", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 39px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: $button;
+  }
+}
+
+.social {
+  max-width: 300px;
+  display: inline;
+  a {
+    padding: 5px;
+  }
+}
+
+hr {
+  display: none;
+  border: 1px solid #000000;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 100px 0 35px;
+    /* max-width: 1440px; */
+  }
+
+  hr {
+    display: block;
+    max-width: 1170px;
+    margin: 55px auto;
+  }
+  .footerMenu {
+    margin: auto;
+    max-width: 700px;
+    display: flex;
+
+    justify-content: space-between;
+  }
+
+  .social {
+    a {
+      margin: 0 12px;
+    }
+  }
+
+  .policy {
+    margin: 75px 0 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a,
+    p {
+      margin: 0 7px;
+      font-size: 14px;
+      line-height: 140.62%;
+
+      text-align: center;
+
+      color: #000000;
+    }
+  }
+}

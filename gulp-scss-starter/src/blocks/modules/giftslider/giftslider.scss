@@ -1,0 +1,98 @@
+.gifthover {
+  .options {
+    display: none;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.hovertitle {
+  margin: 96px auto 64px;
+  font-size: 18px;
+  line-height: 135.94%;
+  /* identical to box height, or 24px */
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.slider {
+  width: 100%;
+}
+
+.glide {
+  &__slide {
+    display: flex;
+    justify-content: center;
+  }
+  .option {
+    margin: 40px 0;
+    background: $bg_color;
+  }
+  &__slide--active {
+    .option {
+      background-color: $blog_text;
+      box-shadow: $shadow;
+      z-index: 3;
+    }
+  }
+}
+
+.option-type {
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.option {
+  &:hover {
+    background-color: $blog_text;
+    box-shadow: $shadow;
+  }
+}
+
+.option-type {
+  a {
+    margin-top: 74px;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #000000;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .option {
+    background: $bg_color;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .slider {
+    display: none;
+  }
+
+  .gifthover {
+    .options {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 30px;
+
+      padding-bottom: 80px;
+    }
+  }
+
+  .option {
+    margin: 0;
+  }
+}

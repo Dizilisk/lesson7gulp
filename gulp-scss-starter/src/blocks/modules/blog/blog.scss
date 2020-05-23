@@ -1,0 +1,144 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 88px auto 71px;
+  text-align: center;
+  p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 135.94%;
+  }
+}
+
+.blog__primary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $blog_main;
+  img {
+    width: 100%;
+  }
+}
+
+.primary__text {
+  margin: 40px 15px 40px;
+  color: $blog_text;
+  text-align: start;
+  p {
+    margin: 0;
+  }
+  h2 {
+    font-weight: 400;
+    padding: 27px 0 30px;
+    color: $blog_text;
+  }
+  a {
+    font-size: 18px;
+    text-decoration: none;
+    color: $blog_text;
+  }
+}
+
+.blogs {
+  margin: 40px auto 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog__secondary {
+  max-width: 474px;
+  margin: 15px 15px;
+  padding: 15px 30px;
+  font-size: 14px;
+  line-height: 140.62%;
+
+  color: $text_alter;
+  a {
+    font-size: 12px;
+    line-height: 140.62%;
+  }
+  &:hover {
+    background-color: $blog_text;
+    box-shadow: $shadow;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blog__primary {
+    flex-direction: row;
+    p {
+      font-size: 14px;
+      line-height: 140.62%;
+
+      color: $blog_text;
+    }
+    h2 {
+      padding-bottom: 60px;
+      font-size: 32px;
+      line-height: 35px;
+      color: $blog_text;
+    }
+    a {
+      font-size: 18px;
+      line-height: 140.62%;
+
+      color: $blog_text;
+    }
+  }
+
+  .blogs {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .blog {
+    align-items: center;
+  }
+  .primary__text {
+    margin: auto auto auto 78px;
+    h2 {
+      font-size: 48px;
+      line-height: 58px;
+
+      color: $blog_text;
+    }
+  }
+
+  .blogs {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .blog__secondary {
+    max-width: 570px;
+    padding: 50px;
+    p {
+      font-size: 18px;
+      line-height: 140.62%;
+      /* or 25px */
+
+      color: $text_alter;
+    }
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .blog {
+    .wrapper {
+      max-width: 1170px;
+    }
+  }
+
+  .blogs {
+    justify-content: space-between;
+  }
+
+  .blog__secondary {
+    margin: 0;
+  }
+}

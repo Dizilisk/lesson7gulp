@@ -1,0 +1,87 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "vendor/libs";
+@import "base/fonts";
+@import "base/general";
+@import "../blocks/modules";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Montserrat", sans-serif;
+  /* font-size: 10px; */
+}
+
+p {
+  margin: 15px auto 15px;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  color: #000000;
+}
+
+h2 {
+  font-size: 24px;
+
+  /* identical to box height, or 45px */
+
+  color: #000000;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 140.62%;
+  /* or 34px */
+
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #f7941e;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #f7941e;
+  border-radius: 5px;
+}
+
+.button.button_primary {
+  color: white;
+  background-color: #f7941e;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 56px;
+    line-height: 69px;
+    color: #000000;
+  }
+  p {
+    max-width: none;
+
+    font-size: 20px;
+    line-height: 140.62%;
+    /* or 28px */
+
+    color: #000000;
+  }
+}
